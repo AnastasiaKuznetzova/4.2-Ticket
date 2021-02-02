@@ -8,6 +8,15 @@ public class Ticket implements Comparable {
     private String arrivalAirport;
     private int travelTime;
 
+    public Ticket(int id, int cost, String departureAirport, String arrivalAirport, int travelTime) {
+        this.id = id;
+        this.cost = cost;
+        this.departureAirport = departureAirport;
+        this.arrivalAirport = arrivalAirport;
+        this.travelTime = travelTime;
+    }
+
+
     public int getId() {
         return id;
     }
@@ -53,4 +62,5 @@ public class Ticket implements Comparable {
         Ticket p= (Ticket) o;
         return cost-p.cost;
     }
+
 }

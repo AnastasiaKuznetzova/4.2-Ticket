@@ -31,7 +31,11 @@ public class TicketManager {
         Arrays.sort(result);
         return result;
     }
-
+    public Ticket[] showOffers() {
+        Ticket[] result = repository.getAll();
+        Arrays.sort(result);
+        return result;
+    }
 
 }
 
